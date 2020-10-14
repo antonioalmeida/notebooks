@@ -76,7 +76,7 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="_static/ada-bug.png" class="logo" alt="logo">
+  <img src="_static/feup-logo.png" class="logo" alt="logo">
   
   
   <h1 class="site-logo" id="site-title">FPRO Notebooks</h1>
@@ -247,6 +247,39 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#development">
+   Development
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prerequisites">
+     Prerequisites
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#install-dependencies">
+     Install Dependencies
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#useful-commands">
+     Useful Commands
+    </a>
+    <ul class="nav section-nav flex-column">
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -260,11 +293,42 @@
 <blockquote>
 <div><p>See in the <a class="reference internal" href="00-preface.html"><span class="doc std std-doc">Preface</span></a> how to download the notebooks and how to open your working copy.</p>
 </div></blockquote>
+<div class="section" id="development">
+<h2>Development<a class="headerlink" href="#development" title="Permalink to this headline">¶</a></h2>
+<p>The following instructions are relevant if you want to setup the <a class="reference external" href="https://jupyterbook.org/intro.html">jupyterbook</a> environment used for the <a class="reference external" href="https://github.com/fpro-feup/notebooks/blob/master/.github/workflows/gh-pages.yml">Github Pages action</a>. <strong>Kids</strong>, this mean you probably won’t need this.</p>
+<div class="section" id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.0+</p></li>
+<li><p>pip</p></li>
+<li><p>virtualenv (optional)</p></li>
+</ul>
+</div>
+<div class="section" id="install-dependencies">
+<h3>Install Dependencies<a class="headerlink" href="#install-dependencies" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># setup virtual environment (optional)</span>
+$ virtualenv venv <span class="c1"># only needed the first time </span>
+$ <span class="nb">source</span> venv/bin/activate
+
+<span class="c1"># install dependencies</span>
+$ pip install -r ci-requirements.txt 
+</pre></div>
+</div>
+</div>
+<div class="section" id="useful-commands">
+<h3>Useful Commands<a class="headerlink" href="#useful-commands" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># build the book</span>
+$ jupyter-book build .
+</pre></div>
+</div>
+<p>For additional commands and options checkout <a class="reference external" href="https://jupyterbook.org/start/build.html">jupyterbook’s docs</a>.</p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
+</div>
+</div>
 </div>
 </div>
 
