@@ -1,0 +1,1059 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction &amp; The way of the program &#8212; FPRO Notebooks</title>
+    
+  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Variables, expressions and statements" href="02-simple-data.html" />
+    <link rel="prev" title="FPRO: Programming Fundamentals (with Python)" href="00-preface.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/ada-bug.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">FPRO Notebooks</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   Notebooks
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  0 - Get Started
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="00-contents.html">
+   Contents
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="00-preface.html">
+   Preface
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  1 - Introduction
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Introduction &amp; The way of the program
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#presentation-of-the-course">
+   Presentation of the Course
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#computers-algorithms-and-programs">
+   Computers, Algorithms and Programs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#the-way-of-the-program">
+   The way of the program
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#ticket-to-leave">
+   Ticket to Leave
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  2 - Simple Data
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-simple-data.html">
+   Variables, expressions and statements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-simple-data.html#simple-python-data">
+   Simple Python Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-simple-data.html#ticket-to-leave">
+   Ticket to Leave
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/01-introduction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/fpro-feup/notebooks"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/fpro-feup/notebooks/master?urlpath=tree/01-introduction.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Introduction &amp; The way of the program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#programming-fundamentals-nb01">
+     Programming Fundamentals (NB01)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#mieic-2020-21">
+       MIEIC/2020-21
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#joao-correia-lopes">
+         João Correia Lopes
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#goals">
+     Goals
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bibliography">
+     Bibliography
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#presentation-of-the-course">
+   Presentation of the Course
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#unit-goals">
+     Unit Goals
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Bibliography
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessment">
+     Assessment
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#eligibility-for-exams">
+       Eligibility for exams
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculation-formula-of-final-grade">
+       Calculation formula of final grade
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computers-algorithms-and-programs">
+   Computers, Algorithms and Programs
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computer-scientists">
+     Computer Scientists
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computational-thinking">
+     Computational thinking
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#problem-solving">
+     Problem solving
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#algorithm">
+     Algorithm
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-computer-architecture">
+     The computer architecture
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#high-level-languages">
+     High-level languages
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-interpreter">
+     Python Interpreter
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#compilers">
+       Compilers
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#virtual-machines">
+       Virtual machines
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-way-of-the-program">
+   The way of the program
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     Python
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-python-programming-language">
+     1.1 The Python programming language
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-a-program">
+     1.2 What is a program?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-debugging">
+     1.3 What is debugging?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#syntax-errors">
+     1.4 Syntax errors
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#runtime-errors">
+     1.5 Runtime errors
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#semantic-errors">
+     1.6 Semantic errors
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#experimental-debugging">
+     1.7 Experimental debugging
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formal-and-natural-languages">
+     1.8 Formal and natural languages
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-typical-first-program-with-bonus">
+     1.9 A Typical First Program (with bonus)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comments">
+     1.10 Comments
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-zen-of-python">
+     1.11 The Zen of Python
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#looking-forward">
+       Looking forward
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ticket-to-leave">
+   Ticket to Leave
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#moodle-activity">
+     Moodle activity
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="introduction-the-way-of-the-program">
+<h1>Introduction &amp; The way of the program<a class="headerlink" href="#introduction-the-way-of-the-program" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="programming-fundamentals-nb01">
+<h2>Programming Fundamentals (NB01)<a class="headerlink" href="#programming-fundamentals-nb01" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mieic-2020-21">
+<h3>MIEIC/2020-21<a class="headerlink" href="#mieic-2020-21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="joao-correia-lopes">
+<h4>João Correia Lopes<a class="headerlink" href="#joao-correia-lopes" title="Permalink to this headline">¶</a></h4>
+<p>FEUP/DEI and INESC TEC</p>
+</div>
+</div>
+</div>
+<div class="section" id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<p>By the end of this class, the student should be able to:</p>
+<ul class="simple">
+<li><p>Describe the goals, methods and assessment of the Unit</p></li>
+<li><p>Describe introductory concepts on Problem solving, Algorithms and Programming Languages</p></li>
+<li><p>Describe the concepts of program, errors and debugging</p></li>
+</ul>
+</div>
+<div class="section" id="bibliography">
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>J. Correia Lopes, <em>Description of Course Unit</em>, September 2020, available at content Wiki
+<a class="reference external" href="https://web.fe.up.pt/~jlopes/doku.php/teach/fpro/sheet">EN</a> and
+<a class="reference external" href="https://web.fe.up.pt/~jlopes/doku.php/teach/fpro/ficha">PT</a></p></li>
+<li><p>Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers, <em>How to Think Like a Computer Scientist — Learning with Python 3</em> (Chapter 1)
+[<a class="reference external" href="https://media.readthedocs.org/pdf/howtothink/latest/howtothink.pdf">PDF April 2020</a>]
+[<a class="reference external" href="http://openbookproject.net/thinkcs/python/english3e/">HTML</a>]</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="presentation-of-the-course">
+<h1>Presentation of the Course<a class="headerlink" href="#presentation-of-the-course" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="unit-goals">
+<h2>Unit Goals<a class="headerlink" href="#unit-goals" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>The global aim of this Unit is to give the student the ability to
+create algorithms, and to use a programming language to implement,
+test, and debug algorithms for solving simple problems.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The student will be able to understand and use the fundamental
+programming constructs, and the Functional approach to
+programming, specifically effect-free programming where function
+calls have no side-effects and variables are immutable, and
+contrast it with the Imperative approach.</p>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+https://web.fe.up.pt/~jlopes/doku.php/teach/fpro/sheet</p>
+</div>
+<div class="section" id="id1">
+<h2>Bibliography<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers, <em>How to Think Like a Computer Scientist — Learning with Python 3</em>
+[<a class="reference external" href="https://media.readthedocs.org/pdf/howtothink/latest/howtothink.pdf">PDF</a>]
+[<a class="reference external" href="http://openbookproject.net/thinkcs/python/english3e/">HTML</a>]</p></li>
+</ul>
+<p>and more:</p>
+<ul class="simple">
+<li><p>David Mertz, <em>Functional Programming in Python</em>
+[<a class="reference external" href="http://www.devlang.com/static/s17/cse294/functional-prog-in-python.pdf">PDF</a>]</p></li>
+<li><p>Brad Miller and David Ranum, <em>Learning with Python: Interactive Edition</em>
+[<a class="reference external" href="https://runestone.academy/runestone/books/published/thinkcspy/index.html">HTML</a>]</p></li>
+<li><p>Steven F. Lott, <em>Building Skills in Python - A Programmer’s Introduction to Python</em>
+[<a class="reference external" href="http://interactivepython.org/runestone/static/CS152f17/index.html">HTML</a>]</p></li>
+<li><p>Ernesto Costa, <em>Programação em Python – Fundamentos e Resolução de Problemas</em>
+[<a class="reference external" href="http://catalogo.up.pt/F/-?func=find-b&amp;local_base=FEUP&amp;find_code=SYS&amp;request=000585384">Library</a>]</p></li>
+</ul>
+</div>
+<div class="section" id="assessment">
+<h2>Assessment<a class="headerlink" href="#assessment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="eligibility-for-exams">
+<h3>Eligibility for exams<a class="headerlink" href="#eligibility-for-exams" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Student can not exceed the absences limit (<strong>25% of the total number of estimated recitation classes</strong>)</p></li>
+<li><p>Students must obtain a minimum of 40% in the last practical on computer evaluations: <span class="math notranslate nohighlight">\(PE04 \geq 40\%\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="calculation-formula-of-final-grade">
+<h3>Calculation formula of final grade<a class="headerlink" href="#calculation-formula-of-final-grade" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>LE = Lecture in-class evaluation</p></li>
+<li><p>RE = Recitation and away weekly evaluation</p></li>
+<li><p>PE = Practical on computer evaluation: <strong>Individual</strong> programming assignments</p></li>
+<li><p>TE = Theory evaluation: <strong>Individual</strong> multiple-choice questions about programming concepts</p></li>
+</ul>
+<blockquote>
+<div><p>Final classification: <span class="math notranslate nohighlight">\(10\% LE + 10\% RE + 50\% PE + 30\% TE\)</span></p>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+<a class="reference external" href="https://web.fe.up.pt/~jlopes/doku.php/teach/fpro/sheet#eligibility_for_exams">Read the full story</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="computers-algorithms-and-programs">
+<h1>Computers, Algorithms and Programs<a class="headerlink" href="#computers-algorithms-and-programs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="computer-scientists">
+<h2>Computer Scientists<a class="headerlink" href="#computer-scientists" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Like <strong>mathematicians</strong>, computer scientists use formal languages to denote ideas (specifically computations).</p></li>
+<li><p>Like <strong>engineers</strong>, they design things, assembling components into systems and evaluating tradeoffs among alternatives.</p></li>
+<li><p>Like <strong>scientists</strong>, they observe the behavior of complex systems, form hypotheses, and test predictions.</p></li>
+</ul>
+</div>
+<div class="section" id="computational-thinking">
+<h2>Computational thinking<a class="headerlink" href="#computational-thinking" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Computational thinking" src="_images/comp-thinking.png" /></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+<a class="reference external" href="https://www.bbc.com/bitesize/guides/zp92mp3/revision/1">BBC, Bitsize, Introduction to computational thinking</a></p>
+</div>
+<div class="section" id="problem-solving">
+<h2>Problem solving<a class="headerlink" href="#problem-solving" title="Permalink to this headline">¶</a></h2>
+<p>The single most important skill for a computer scientist is <strong>problem solving</strong>.</p>
+<ul class="simple">
+<li><p>Problem solving means the ability to formulate problems, think creatively about solutions, and express a solution clearly and accurately</p></li>
+<li><p>The process of learning to program is an excellent opportunity to practice problem-solving skills.</p></li>
+</ul>
+</div>
+<div class="section" id="algorithm">
+<h2>Algorithm<a class="headerlink" href="#algorithm" title="Permalink to this headline">¶</a></h2>
+<p>If problem solving is a central part of computer science, then the solutions that you create through the problem solving process are also important.
+In computer science, we refer to these solutions as algorithms.</p>
+<p>| A set of specific steps for solving a category of problems</p>
+<p>| <strong>steps + flow + stop decision</strong></p>
+</div>
+<div class="section" id="the-computer-architecture">
+<h2>The computer architecture<a class="headerlink" href="#the-computer-architecture" title="Permalink to this headline">¶</a></h2>
+<p><img alt="The von neumann architecture" src="_images/vnarch.png" /></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+https://www.computerscience.gcse.guru/theory/von-neumann-architecture</p>
+</div>
+<div class="section" id="high-level-languages">
+<h2>High-level languages<a class="headerlink" href="#high-level-languages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Low-level languages (machine languages or assembly languages),
+are the only languages a computer executes;</p></li>
+<li><p>Thus, programs written in a high-level language have to be
+translated into something <em>more suitable</em> before they can run;</p></li>
+<li><p>Python is an example of a high-level language;</p></li>
+<li><p>Other high-level languages you might have heard of are C++,
+JavaScript, PHP, Pascal, C# or Java.</p></li>
+</ul>
+</div>
+<div class="section" id="python-interpreter">
+<h2>Python Interpreter<a class="headerlink" href="#python-interpreter" title="Permalink to this headline">¶</a></h2>
+<p>There are two ways to use it:</p>
+<ul class="simple">
+<li><p>In <em>immediate mode</em> (or <em>Shell mode</em>), you type Python expressions into the Python
+Interpreter window, and the interpreter immediately shows the result;</p></li>
+<li><p>In <em>script mode</em> (or <em>program mode</em>), you can write a program in a file and use the
+interpreter to execute the contents of the file.</p></li>
+</ul>
+<p><img alt="Interpreter" src="_images/interpreter.png" /></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+<a class="reference external" href="https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/ThePythonProgrammingLanguage.html">runestone.academy</a></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+<a class="reference external" href="https://www.spyder-ide.org">Spyder3 IDE</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">6</span> <span class="o">+</span> <span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>9
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="compilers">
+<h3>Compilers<a class="headerlink" href="#compilers" title="Permalink to this headline">¶</a></h3>
+<p>Note that some languages are compiled (e.g. C++)</p>
+<p><img alt="compiler" src="_images/compiler.png" /></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+[https://runestone.academy/runestone/books/published/thinkcspy/GeneralIntro/ThePythonProgrammingLanguage.html]</p>
+</div>
+<div class="section" id="virtual-machines">
+<h3>Virtual machines<a class="headerlink" href="#virtual-machines" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Many modern languages use both processes</p>
+<ul>
+<li><p>They are first compiled into a lower level language, called <strong>byte code</strong>,</p></li>
+<li><p>and then interpreted by a program called a virtual machine</p></li>
+</ul>
+</li>
+<li><p>Python uses both processes, but because of the way programmers interact with it, it is usually considered an interpreted language</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="the-way-of-the-program">
+<h1>The way of the program<a class="headerlink" href="#the-way-of-the-program" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python is everywhere and is quite popular among data scientists and startups.</p></li>
+<li><p>Python has the added benefit of being a clean and simple syntax with massive community run library (NumPy, Pandas, SciPy, etc.).</p></li>
+<li><p>Later, there’s lots you can do with Python:</p>
+<ul>
+<li><p>Web Development</p></li>
+<li><p>Scientific and Numeric Computing</p></li>
+<li><p>Machine Learning (neural networks)</p></li>
+<li><p>Chat bots</p></li>
+<li><p>Automate the boring stuff</p></li>
+<li><p>Write your own games</p></li>
+</ul>
+</li>
+<li><p>FPRO’s YouTube channel:
+<a class="reference external" href="https://www.youtube.com/channel/UC_RySrYRMcxfdvRwHMTwCug/videos">FPRO’s past projects</a></p></li>
+</ul>
+<p>Watch one of the videos:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;5Db6WDhePrM&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="400"
+    height="300"
+    src="https://www.youtube.com/embed/5Db6WDhePrM"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<p>Execute an example of Python code:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="c1"># https://github.com/fpro-feup/public/blob/master/lectures/01/basics.py</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current date and time using str method of datetime object:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">now</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current date and time using instance attributes:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current year: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">now</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current month: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">now</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current day: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">now</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current hour: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">now</span><span class="o">.</span><span class="n">hour</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current minute: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">now</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current second: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">now</span><span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current microsecond: </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">now</span><span class="o">.</span><span class="n">microsecond</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Current date and time using strftime:&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Current date and time using str method of datetime object:
+
+2020-10-14 16:44:07.275364
+
+Current date and time using instance attributes:
+
+Current year: 2020
+Current month: 10
+Current day: 14
+Current hour: 16
+Current minute: 44
+Current second: 7
+Current microsecond: 275364
+
+Current date and time using strftime:
+2020-10-14 16:44
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-python-programming-language">
+<h2>1.1 The Python programming language<a class="headerlink" href="#the-python-programming-language" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python is an interpreted high-level programming language for
+general-purpose programming</p></li>
+<li><p>Created by Guido van Rossum and first released in 1991</p></li>
+<li><p>Python has a design philosophy that emphasizes code
+readability, notably using significant whitespace.</p></li>
+<li><p>It provides constructs that enable clear programming on both
+small and large scales</p></li>
+<li><p>Python features a dynamic type system and automatic memory
+management</p></li>
+<li><p>It supports multiple programming paradigms, including
+imperative, functional, procedural and object-oriented</p></li>
+<li><p>It has a large and comprehensive standard library</p></li>
+</ul>
+</div>
+<div class="section" id="what-is-a-program">
+<h2>1.2 What is a program?<a class="headerlink" href="#what-is-a-program" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A program is a sequence of instructions that specifies how to
+perform a computation</p></li>
+<li><p>A few basic instructions appear in just about every language:</p>
+<ul>
+<li><p><strong>input</strong>: Get data from the keyboard, a file, or some other
+device (such as a sensor)</p></li>
+<li><p><strong>output</strong>: Display data on the screen or send data to a file
+or other device (such as a motor)</p></li>
+<li><p><strong>math</strong>: Perform basic mathematical operations like addition
+and multiplication</p></li>
+<li><p><strong>conditional execution</strong>: Check for certain conditions and
+execute the appropriate sequence of statements</p></li>
+<li><p><strong>repetition</strong>: Perform some action repeatedly, usually with
+some variation</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="what-is-debugging">
+<h2>1.3 What is debugging?<a class="headerlink" href="#what-is-debugging" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Programming is a complex process, and because it is done by
+human beings, it often leads to errors</p></li>
+<li><p>Programming errors are called <strong>bugs</strong> and the process of
+tracking them down and correcting them is called <strong>debugging</strong>.</p></li>
+</ul>
+<p><img alt="ADA bug" src="_images/ada-bug.png" /></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+https://en.wikipedia.org/wiki/Software_bug</p>
+</div>
+<div class="section" id="syntax-errors">
+<h2>1.4 Syntax errors<a class="headerlink" href="#syntax-errors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Syntax refers to the structure of a program and the rules
+about that structure</p></li>
+<li><p>For example, in English, a sentence must begin with a capital
+letter and end with a period</p></li>
+<li><p>Python can only execute a program if the program is
+syntactically correct; otherwise, the process fails and returns an
+error message</p></li>
+</ul>
+</div>
+<div class="section" id="runtime-errors">
+<h2>1.5 Runtime errors<a class="headerlink" href="#runtime-errors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A runtime error does not appear until you run the program.</p></li>
+<li><p>These errors are also called <strong>exceptions</strong> because they
+usually indicate that something exceptional (and bad) has
+happened.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="mi">50</span> <span class="o">/</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ZeroDivisionError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="n">aaed92358df0</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="mi">50</span> <span class="o">/</span> <span class="mi">0</span>
+
+<span class="ne">ZeroDivisionError</span>: division by zero
+</pre></div>
+</div>
+</div>
+</div>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+<a class="reference external" href="https://realpython.com/python-traceback/">Understanding the Python Traceback</a></p>
+<p>Using Spyder3, note the differences between <em>edit</em> and <em>run</em> environments</p>
+</div>
+<div class="section" id="semantic-errors">
+<h2>1.6 Semantic errors<a class="headerlink" href="#semantic-errors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>With a semantic error in your program, it will run
+successfully, but it will not do the right thing</p></li>
+<li><p>The problem is that the program you wrote is not the program
+you intended to write</p></li>
+<li><p>The meaning of the program (its <em>semantics</em>) is wrong</p></li>
+</ul>
+</div>
+<div class="section" id="experimental-debugging">
+<h2>1.7 Experimental debugging<a class="headerlink" href="#experimental-debugging" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>One of the most important skills you will acquire is
+debugging.</p></li>
+<li><p>Although it can be frustrating, debugging is one of the most
+intellectually rich, challenging, and interesting parts of
+programming.</p></li>
+<li><p>In some ways, debugging is like detective work (clues, inference, …)</p></li>
+<li><p>Debugging is also like an experimental science</p></li>
+</ul>
+</div>
+<div class="section" id="formal-and-natural-languages">
+<h2>1.8 Formal and natural languages<a class="headerlink" href="#formal-and-natural-languages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Natural languages</strong> are the languages that people
+speak, such as English</p></li>
+<li><p><strong>Formal languages</strong> are languages that are designed by
+people for specific applications</p>
+<ul>
+<li><p>For example, the math notation  is a formal language that is
+particularly good at denoting relationships among numbers and
+symbols</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p><strong>Programming languages are formal languages
+designed to express computations.</strong></p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Syntax rules: <em>tokens</em> &amp; structure</p></li>
+<li><p><em>Parsing</em> a statement is needed to determine its structure</p></li>
+</ul>
+</div>
+<div class="section" id="a-typical-first-program-with-bonus">
+<h2>1.9 A Typical First Program (with bonus)<a class="headerlink" href="#a-typical-first-program-with-bonus" title="Permalink to this headline">¶</a></h2>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+https://github.com/fpro-feup/public/blob/master/lectures/01/hello.py</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">greeting</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>  <span class="c1"># my first variable</span>
+
+<span class="c1"># to comment MANY lines at a time, highlight all of them then CTRL+1</span>
+
+<span class="c1">#whoami = &quot;jlopes&quot;</span>
+<span class="c1">#greeting = greeting + &quot; &quot; + whoami</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">greeting</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Spyder can autocomplete names for you.</span>
+<span class="c1"># Start typing a variable name defined in your program and hit tab </span>
+
+<span class="c1"># define a variable</span>
+<span class="n">a_very_long_variable_name_dont_name_them_this_long_pls</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># below, start typing a_ve then hit &lt;tab&gt;... cool, right!</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>1.10 Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A comment in a computer program is text that is intended only
+for the human reader</p></li>
+<li><p>It is completely ignored by the interpreter</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#---------------------------------------------------</span>
+<span class="c1"># This demo program shows off how elegant Python is!</span>
+<span class="c1"># Written by John Snow, December 2015.</span>
+<span class="c1">#---------------------------------------------------</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>  <span class="c1"># Isn&#39;t this easy!</span>
+</pre></div>
+</div>
+<p>You may try it next:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>  <span class="c1"># Isn&#39;t this easy!</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="the-zen-of-python">
+<h2>1.11 The Zen of Python<a class="headerlink" href="#the-zen-of-python" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">this</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="looking-forward">
+<h3>Looking forward<a class="headerlink" href="#looking-forward" title="Permalink to this headline">¶</a></h3>
+<p>For the future, by the end of the course, you may do things like this:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">documentURL</span> <span class="o">=</span> <span class="s1">&#39;https://www.w3.org/People/Raggett/book4/ch02.html&#39;</span>
+
+<span class="n">html</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">documentURL</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ticket-to-leave">
+<h1>Ticket to Leave<a class="headerlink" href="#ticket-to-leave" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="moodle-activity">
+<h2>Moodle activity<a class="headerlink" href="#moodle-activity" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://moodle.up.pt/mod/quiz/view.php?id=11500">LE01: The way of the program</a></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+<a class="reference internal" href="00-contents.html"><span class="doc std std-doc">Go back to the Table of Contents</span></a></p>
+<p><span class="math notranslate nohighlight">\(\Rightarrow\)</span> 
+<a class="reference internal" href="00-preface.html"><span class="doc std std-doc">Read the Preface</span></a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="00-preface.html" title="previous page">FPRO: Programming Fundamentals (with Python)</a>
+    <a class='right-next' id="next-link" href="02-simple-data.html" title="next page">Variables, expressions and statements</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
